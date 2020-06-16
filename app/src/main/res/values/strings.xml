@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">HeatHelper</string>
+    <string name="title_activity_item">item</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_history">history</string>
+    <string name="title_activity_index">Index</string>
+    <string name="title_activity_heat_cal">HeatHelper</string>
+    <string name="title_activity_staple">staple</string>
+    <string name="title_activity_vgetable">vgetable</string>
+    <string name="title_activity_fruit">fruit</string>
+    <string name="title_activity_milk">milk</string>
+    <string-array name="spinner1">
+        <item>玉米</item>
+        <item>包子</item>
+        <item>米饭</item>
+        <item>面包</item>
+        <item>面条</item>
+    </string-array>
+
+    <string-array name="spinner2">
+        <item>胡萝卜</item>
+        <item>白菜</item>
+        <item>黄瓜</item>
+        <item>南瓜</item>
+        <item>竹笋</item>
+        <item>土豆</item>
+    </string-array>
+
+    <string-array name="spinner3">
+        <item>苹果</item>
+        <item>草莓</item>
+        <item>香蕉</item>
+        <item>橙子</item>
+        <item>火龙果</item>
+    </string-array>
+
+    <string-array name="spinner4">
+        <item>牛奶</item>
+        <item>酸奶</item>
+        <item>全脂奶粉</item>
+    </string-array>
+
+
+    <string-array name="spinner5">
+        <item>菜单</item>
+        <item>历史记录</item>
+        <item>热量详情</item>
+
+    </string-array>
+
+
+</resources>

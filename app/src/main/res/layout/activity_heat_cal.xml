@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="热量计算器"
+        android:textColor="#FF9800"
+        android:textSize="34dp" />
+
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="120sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-40dp"
+        android:layout_toRightOf="@+id/textView"
+
+        android:entries="@array/spinner5"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="37dp"
+        android:text="食物种类"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="70sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="-73dp"
+        android:layout_marginTop="37dp"
+
+        android:layout_marginRight="53dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="食用量"
+        android:textSize="20dp" />
+
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/spinner1"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/spinner1"
+        android:ems="10"
+        android:hint="请输入食用量"
+        android:inputType="number"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+
+
+        android:entries="@array/spinner2"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText1"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/spinner2"
+        android:hint="请输入食用量"
+        android:inputType="number"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="27dp"
+        android:entries="@array/spinner1"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/spinner3"
+        android:ems="10"
+        android:hint="请输入食用量"
+        android:inputType="number"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/spinner3"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/spinner4"
+        android:spinnerMode="dialog" />
+
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText3"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="31dp"
+        android:layout_toRightOf="@+id/spinner4"
+        android:ems="10"
+        android:hint="请输入食用量"
+        android:inputType="number"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/tv1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="计算热量" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/tv1"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/button1"
+        android:onClick="onClick"
+        android:text="添加为记录" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spinner4"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        android:background="#8BFFE53B"
+        android:gravity="center"
+        android:text="      "
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+</RelativeLayout>
+
+
